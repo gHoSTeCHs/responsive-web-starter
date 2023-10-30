@@ -67,14 +67,14 @@ function addSong() {
 		curtime.textContent = '00:00';
 	}
 
-	if (!music.paused) {
+	if (music.paused) {
 		faplay.style.display = 'block';
 		fapause.style.display = 'none';
-		music.pause();
+		// music.pause();
 	} else {
 		faplay.style.display = 'none';
 		fapause.style.display = 'block';
-		music.play();
+		// music.play();
 	}
 }
 
